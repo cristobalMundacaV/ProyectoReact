@@ -1,0 +1,21 @@
+import './App.css'
+import './index.css'
+import { useState } from 'react'
+
+import { TwitterFollowCard } from './TwitterFollowCard.jsx'
+
+export function App(){
+
+    return(
+        <section className='App'>
+
+            <TwitterFollowCard userName='midudev' initialIsFollowing={true} >
+                Miguel Angel Duran
+            </TwitterFollowCard>
+
+            <TwitterFollowCard userName="pheralb">
+                Pablo Hernandez
+            </TwitterFollowCard>
+        </section>
+        )
+}
